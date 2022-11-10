@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/test.stub b/src/Illuminate/Foundation/Console/stubs/test.stub
+index 84c75cbfe9..461b82701f 100644
+--- a/src/Illuminate/Foundation/Console/stubs/test.stub
++++ b/src/Illuminate/Foundation/Console/stubs/test.stub
+@@ -13,7 +13,7 @@ class {{ class }} extends TestCase
+      *
+      * @return void
+      */
+-    public function test_example()
++    public function test_example(): void
+     {
+         $response = $this->get('/');
+ 

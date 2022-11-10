@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/listener-queued-duck.stub b/src/Illuminate/Foundation/Console/stubs/listener-queued-duck.stub
+index dd57a4561a..332359440b 100644
+--- a/src/Illuminate/Foundation/Console/stubs/listener-queued-duck.stub
++++ b/src/Illuminate/Foundation/Console/stubs/listener-queued-duck.stub
+@@ -25,7 +25,7 @@ class {{ class }} implements ShouldQueue
+      * @param  object  $event
+      * @return void
+      */
+-    public function handle($event)
++    public function handle($event): void
+     {
+         //
+     }

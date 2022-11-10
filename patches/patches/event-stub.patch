@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/event.stub b/src/Illuminate/Foundation/Console/stubs/event.stub
+index 47f8c913ad..353a8cb837 100644
+--- a/src/Illuminate/Foundation/Console/stubs/event.stub
++++ b/src/Illuminate/Foundation/Console/stubs/event.stub
+@@ -29,7 +29,7 @@ class {{ class }}
+      *
+      * @return \Illuminate\Broadcasting\Channel|array
+      */
+-    public function broadcastOn()
++    public function broadcastOn(): \Illuminate\Broadcasting\Channel|array
+     {
+         return new PrivateChannel('channel-name');
+     }

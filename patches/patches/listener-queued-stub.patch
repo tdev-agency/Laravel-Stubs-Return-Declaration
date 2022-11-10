@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/listener-queued.stub b/src/Illuminate/Foundation/Console/stubs/listener-queued.stub
+index 81cdacce59..43f0487442 100644
+--- a/src/Illuminate/Foundation/Console/stubs/listener-queued.stub
++++ b/src/Illuminate/Foundation/Console/stubs/listener-queued.stub
+@@ -26,7 +26,7 @@ class {{ class }} implements ShouldQueue
+      * @param  {{ eventNamespace }}  $event
+      * @return void
+      */
+-    public function handle({{ event }} $event)
++    public function handle({{ event }} $event): void
+     {
+         //
+     }

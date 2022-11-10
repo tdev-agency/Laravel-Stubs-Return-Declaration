@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/middleware.stub b/src/Illuminate/Routing/Console/stubs/middleware.stub
+index 855594c466..949ab3cd3a 100644
+--- a/src/Illuminate/Routing/Console/stubs/middleware.stub
++++ b/src/Illuminate/Routing/Console/stubs/middleware.stub
+@@ -14,7 +14,7 @@ class {{ class }}
+      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+      */
+-    public function handle(Request $request, Closure $next)
++    public function handle(Request $request, Closure $next): \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     {
+         return $next($request);
+     }

@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/listener-duck.stub b/src/Illuminate/Foundation/Console/stubs/listener-duck.stub
+index 40b9a1eb61..69b3c7a5ba 100644
+--- a/src/Illuminate/Foundation/Console/stubs/listener-duck.stub
++++ b/src/Illuminate/Foundation/Console/stubs/listener-duck.stub
+@@ -23,7 +23,7 @@ class {{ class }}
+      * @param  object  $event
+      * @return void
+      */
+-    public function handle($event)
++    public function handle($event): void
+     {
+         //
+     }

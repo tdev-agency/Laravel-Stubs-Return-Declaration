@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/stubs/facade.stub b/src/Illuminate/Foundation/stubs/facade.stub
+index aadbe74600..5bfe4f2141 100644
+--- a/src/Illuminate/Foundation/stubs/facade.stub
++++ b/src/Illuminate/Foundation/stubs/facade.stub
+@@ -14,7 +14,7 @@ class DummyClass extends Facade
+      *
+      * @return string
+      */
+-    protected static function getFacadeAccessor()
++    protected static function getFacadeAccessor(): string
+     {
+         return 'DummyTarget';
+     }
