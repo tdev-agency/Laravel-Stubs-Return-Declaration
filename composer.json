@@ -1,0 +1,33 @@
+{
+    "name": "tdev-agency/laravel-stubs-return-declaration",
+    "description": "",
+    "version": "1.0.1",
+    "authors": [
+        {
+            "email": "contact@tdev.agency",
+            "name": "TDev Agency"
+        }
+    ],
+    "type": "composer-plugin",
+    "require": {
+        "cweagans/composer-patches": "^1.7.2",
+        "composer-plugin-api": "^1.0 || ^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "TDevAgency\\LaravelStubsReturnDeclaration\\": "src/"
+        }
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    },
+    "extra": {
+        "enable-patching": true,
+        "class": "TDevAgency\\LaravelStubsReturnDeclaration\\Patches",
+        "patches": {
+            "laravel/framework": {
+                "Laravel framework patches": "patches/migration-create-stub.patch"
+            }
+        }
+    }
+}
