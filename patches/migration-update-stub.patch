@@ -1,0 +1,22 @@
+diff --git a/src/Illuminate/Database/Migrations/stubs/migration.update.stub b/src/Illuminate/Database/Migrations/stubs/migration.update.stub
+index d31a2c022b..c030b35138 100755
+--- a/src/Illuminate/Database/Migrations/stubs/migration.update.stub
++++ b/src/Illuminate/Database/Migrations/stubs/migration.update.stub
+@@ -11,7 +11,7 @@ return new class extends Migration
+      *
+      * @return void
+      */
+-    public function up()
++    public function up(): void
+     {
+         Schema::table('{{ table }}', function (Blueprint $table) {
+             //
+@@ -23,7 +23,7 @@ return new class extends Migration
+      *
+      * @return void
+      */
+-    public function down()
++    public function down(): void
+     {
+         Schema::table('{{ table }}', function (Blueprint $table) {
+             //

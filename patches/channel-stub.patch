@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/channel.stub b/src/Illuminate/Foundation/Console/stubs/channel.stub
+index 1b51698085..85b9ef0c4e 100644
+--- a/src/Illuminate/Foundation/Console/stubs/channel.stub
++++ b/src/Illuminate/Foundation/Console/stubs/channel.stub
+@@ -22,7 +22,7 @@ class {{ class }}
+      * @param  \{{ namespacedUserModel }}  $user
+      * @return array|bool
+      */
+-    public function join({{ userModel }} $user)
++    public function join({{ userModel }} $user): array|bool
+     {
+         //
+     }
