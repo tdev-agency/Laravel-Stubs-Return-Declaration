@@ -1,0 +1,22 @@
+diff --git a/src/Illuminate/Database/Migrations/stubs/migration.stub b/src/Illuminate/Database/Migrations/stubs/migration.stub
+index 41dd1c8e6a..f065606490 100755
+--- a/src/Illuminate/Database/Migrations/stubs/migration.stub
++++ b/src/Illuminate/Database/Migrations/stubs/migration.stub
+@@ -11,7 +11,7 @@ return new class extends Migration
+      *
+      * @return void
+      */
+-    public function up()
++    public function up(): void
+     {
+         //
+     }
+@@ -21,7 +21,7 @@ return new class extends Migration
+      *
+      * @return void
+      */
+-    public function down()
++    public function down(): void
+     {
+         //
+     }
