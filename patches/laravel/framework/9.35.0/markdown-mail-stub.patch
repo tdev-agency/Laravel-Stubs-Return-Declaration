@@ -1,0 +1,31 @@
+diff --git a/src/Illuminate/Foundation/Console/stubs/markdown-mail.stub b/src/Illuminate/Foundation/Console/stubs/markdown-mail.stub
+index 76b6ccc53b..019bed9370 100644
+--- a/src/Illuminate/Foundation/Console/stubs/markdown-mail.stub
++++ b/src/Illuminate/Foundation/Console/stubs/markdown-mail.stub
+@@ -28,7 +28,7 @@ class {{ class }} extends Mailable
+      *
+      * @return \Illuminate\Mail\Mailables\Envelope
+      */
+-    public function envelope()
++    public function envelope(): \Illuminate\Mail\Mailables\Envelope
+     {
+         return new Envelope(
+             subject: '{{ subject }}',
+@@ -40,7 +40,7 @@ class {{ class }} extends Mailable
+      *
+      * @return \Illuminate\Mail\Mailables\Content
+      */
+-    public function content()
++    public function content(): \Illuminate\Mail\Mailables\Content
+     {
+         return new Content(
+             markdown: '{{ view }}',
+@@ -52,7 +52,7 @@ class {{ class }} extends Mailable
+      *
+      * @return array
+      */
+-    public function attachments()
++    public function attachments(): array
+     {
+         return [];
+     }

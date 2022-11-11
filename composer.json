@@ -10,24 +10,19 @@
     ],
     "type": "composer-plugin",
     "require": {
-        "cweagans/composer-patches": "^1.7.2",
-        "composer-plugin-api": "^1.0 || ^2.0"
+        "composer-plugin-api": "^2.0",
+        "illuminate/support": "^9"
+    },
+    "require-dev": {
+        "composer/composer": "^2.0",
+        "roave/security-advisories": "dev-latest"
     },
     "autoload": {
         "psr-4": {
             "TDevAgency\\LaravelStubsReturnDeclaration\\": "src/"
         }
     },
-    "require-dev": {
-        "roave/security-advisories": "dev-latest"
-    },
     "extra": {
-        "enable-patching": true,
-        "class": "TDevAgency\\LaravelStubsReturnDeclaration\\Patches",
-        "patches": {
-            "laravel/framework": {
-                "Laravel framework patches": "patches/migration-create-stub.patch"
-            }
-        }
+        "class": "TDevAgency\\LaravelStubsReturnDeclaration\\Plugin"
     }
 }
