@@ -1,0 +1,67 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/controller.model.stub b/src/Illuminate/Routing/Console/stubs/controller.model.stub
+index 1396bd410d..9a649c3fc1 100644
+--- a/src/Illuminate/Routing/Console/stubs/controller.model.stub
++++ b/src/Illuminate/Routing/Console/stubs/controller.model.stub
+@@ -13,7 +13,7 @@ class {{ class }} extends Controller
+      *
+      * @return \Illuminate\Http\Response
+      */
+-    public function index()
++    public function index(): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -23,7 +23,7 @@ class {{ class }} extends Controller
+      *
+      * @return \Illuminate\Http\Response
+      */
+-    public function create()
++    public function create(): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -34,7 +34,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedStoreRequest }}  $request
+      * @return \Illuminate\Http\Response
+      */
+-    public function store({{ storeRequest }} $request)
++    public function store({{ storeRequest }} $request): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -45,7 +45,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function show({{ model }} ${{ modelVariable }})
++    public function show({{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -56,7 +56,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function edit({{ model }} ${{ modelVariable }})
++    public function edit({{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -68,7 +68,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }})
++    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -79,7 +79,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function destroy({{ model }} ${{ modelVariable }})
++    public function destroy({{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }

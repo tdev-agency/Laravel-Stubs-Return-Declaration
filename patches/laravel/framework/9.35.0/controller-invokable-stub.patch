@@ -1,0 +1,13 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/controller.invokable.stub b/src/Illuminate/Routing/Console/stubs/controller.invokable.stub
+index 12d291cce9..d2d45ae181 100644
+--- a/src/Illuminate/Routing/Console/stubs/controller.invokable.stub
++++ b/src/Illuminate/Routing/Console/stubs/controller.invokable.stub
+@@ -13,7 +13,7 @@ class {{ class }} extends Controller
+      * @param  \Illuminate\Http\Request  $request
+      * @return \Illuminate\Http\Response
+      */
+-    public function __invoke(Request $request)
++    public function __invoke(Request $request): \Illuminate\Http\Response
+     {
+         //
+     }

@@ -1,0 +1,49 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/controller.api.stub b/src/Illuminate/Routing/Console/stubs/controller.api.stub
+index 381a9c87f4..29ca0a37f2 100644
+--- a/src/Illuminate/Routing/Console/stubs/controller.api.stub
++++ b/src/Illuminate/Routing/Console/stubs/controller.api.stub
+@@ -12,7 +12,7 @@ class {{ class }} extends Controller
+      *
+      * @return \Illuminate\Http\Response
+      */
+-    public function index()
++    public function index(): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -23,7 +23,7 @@ class {{ class }} extends Controller
+      * @param  \Illuminate\Http\Request  $request
+      * @return \Illuminate\Http\Response
+      */
+-    public function store(Request $request)
++    public function store(Request $request): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -34,7 +34,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function show($id)
++    public function show($id): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -46,7 +46,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function update(Request $request, $id)
++    public function update(Request $request, $id): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -57,7 +57,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function destroy($id)
++    public function destroy($id): \Illuminate\Http\Response
+     {
+         //
+     }

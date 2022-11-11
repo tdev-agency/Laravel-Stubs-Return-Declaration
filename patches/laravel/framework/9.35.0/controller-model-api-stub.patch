@@ -1,0 +1,49 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/controller.model.api.stub b/src/Illuminate/Routing/Console/stubs/controller.model.api.stub
+index 4da21ed058..463a2c692a 100644
+--- a/src/Illuminate/Routing/Console/stubs/controller.model.api.stub
++++ b/src/Illuminate/Routing/Console/stubs/controller.model.api.stub
+@@ -13,7 +13,7 @@ class {{ class }} extends Controller
+      *
+      * @return \Illuminate\Http\Response
+      */
+-    public function index()
++    public function index(): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -24,7 +24,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedStoreRequest }}  $request
+      * @return \Illuminate\Http\Response
+      */
+-    public function store({{ storeRequest }} $request)
++    public function store({{ storeRequest }} $request): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -35,7 +35,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function show({{ model }} ${{ modelVariable }})
++    public function show({{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -47,7 +47,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }})
++    public function update({{ updateRequest }} $request, {{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -58,7 +58,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function destroy({{ model }} ${{ modelVariable }})
++    public function destroy({{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }

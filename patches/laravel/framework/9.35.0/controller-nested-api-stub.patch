@@ -1,0 +1,49 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/controller.nested.api.stub b/src/Illuminate/Routing/Console/stubs/controller.nested.api.stub
+index c5fda605fa..2e61f83ed1 100644
+--- a/src/Illuminate/Routing/Console/stubs/controller.nested.api.stub
++++ b/src/Illuminate/Routing/Console/stubs/controller.nested.api.stub
+@@ -15,7 +15,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function index({{ parentModel }} ${{ parentModelVariable }})
++    public function index({{ parentModel }} ${{ parentModelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -27,7 +27,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedParentModel }}  ${{ parentModelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }})
++    public function store(Request $request, {{ parentModel }} ${{ parentModelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -39,7 +39,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function show({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
++    public function show({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -52,7 +52,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
++    public function update(Request $request, {{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -64,7 +64,7 @@ class {{ class }} extends Controller
+      * @param  \{{ namespacedModel }}  ${{ modelVariable }}
+      * @return \Illuminate\Http\Response
+      */
+-    public function destroy({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }})
++    public function destroy({{ parentModel }} ${{ parentModelVariable }}, {{ model }} ${{ modelVariable }}): \Illuminate\Http\Response
+     {
+         //
+     }

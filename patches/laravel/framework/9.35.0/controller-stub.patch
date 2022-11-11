@@ -1,0 +1,67 @@
+diff --git a/src/Illuminate/Routing/Console/stubs/controller.stub b/src/Illuminate/Routing/Console/stubs/controller.stub
+index 2e6b620f95..d60c7dc011 100644
+--- a/src/Illuminate/Routing/Console/stubs/controller.stub
++++ b/src/Illuminate/Routing/Console/stubs/controller.stub
+@@ -12,7 +12,7 @@ class {{ class }} extends Controller
+      *
+      * @return \Illuminate\Http\Response
+      */
+-    public function index()
++    public function index(): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -22,7 +22,7 @@ class {{ class }} extends Controller
+      *
+      * @return \Illuminate\Http\Response
+      */
+-    public function create()
++    public function create(): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -33,7 +33,7 @@ class {{ class }} extends Controller
+      * @param  \Illuminate\Http\Request  $request
+      * @return \Illuminate\Http\Response
+      */
+-    public function store(Request $request)
++    public function store(Request $request): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -44,7 +44,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function show($id)
++    public function show($id): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -55,7 +55,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function edit($id)
++    public function edit($id): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -67,7 +67,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function update(Request $request, $id)
++    public function update(Request $request, $id): \Illuminate\Http\Response
+     {
+         //
+     }
+@@ -78,7 +78,7 @@ class {{ class }} extends Controller
+      * @param  int  $id
+      * @return \Illuminate\Http\Response
+      */
+-    public function destroy($id)
++    public function destroy($id): \Illuminate\Http\Response
+     {
+         //
+     }
