@@ -1,7 +1,8 @@
 {
     "name": "tdev-agency/laravel-stubs-return-declaration",
-    "description": "",
-    "version": "1.0.1",
+    "description": "Composer plugin will add return declaration for laravel stubs.",
+    "version": "1.0.0",
+    "license": "MIT",
     "authors": [
         {
             "email": "contact@tdev.agency",
